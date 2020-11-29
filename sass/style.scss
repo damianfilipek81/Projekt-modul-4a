@@ -1,9 +1,16 @@
 $font-text: 'Abel', sans-serif;
 $font-header: 'Libre Baskerville', serif;
+$color-grey: #B1C2D1;
+$color-light: #FFFFFF;
+$color-gold: #DBE46E;
 
 /*GLOBAL*/
-h1 {
+h1, h2, h3, h4, h5 {
   margin: 0;
+  font-family: $font-header;
+}
+p {
+  font-family: $font-text;
 }
 body {
   margin: 0;
@@ -11,11 +18,14 @@ body {
 .container {
   text-align: center;
 }
+a:link, a:visited, a:active, a:hover {
+  text-decoration: none;
+}
 
 /*HEADER*/
 
 header {
-  background-image: url("../images/1.jpg");
+  background-image: url("../images/2.jpg");
   background-position: center center;
   background-size: cover;
   height: 100vh;
@@ -26,10 +36,11 @@ header {
 .navigation {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 40px 20px;
   align-items: center;
 
   .website-logo {
+    color: $color-gold;
   }
 
   ul {
@@ -48,22 +59,33 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50% , -50%);
+
+  .btn-one {
+
+  }
 }
 
+.btn {
+  color: $color-light;
+}
 /* SERVICES */
 
 .services-box-icon {
-  padding: 30px;
   span {
+    display: inline-block;
     border-radius: 50%;
     border: solid 3px;
     border-color: green;
-    padding: 15px;
+    padding: 30px;
+    position: relative;
 
-  }
-  i {
-    font-size: 20px;
-    color: green;
-    line-height: 50%;
+    i {
+      position: absolute;
+      font-size: 30px;
+      color: green;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50% , -50%);
+    }
   }
 }

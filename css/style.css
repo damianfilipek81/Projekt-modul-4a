@@ -1,6 +1,11 @@
 /*GLOBAL*/
-h1 {
+h1, h2, h3, h4, h5 {
   margin: 0;
+  font-family: "Libre Baskerville", serif;
+}
+
+p {
+  font-family: "Abel", sans-serif;
 }
 
 body {
@@ -11,9 +16,13 @@ body {
   text-align: center;
 }
 
+a:link, a:visited, a:active, a:hover {
+  text-decoration: none;
+}
+
 /*HEADER*/
 header {
-  background-image: url("../images/1.jpg");
+  background-image: url("../images/2.jpg");
   background-position: center center;
   background-size: cover;
   height: 100vh;
@@ -26,9 +35,13 @@ header {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  padding: 20px;
+  padding: 40px 20px;
   -ms-flex-align: center;
       align-items: center;
+}
+
+.navigation .website-logo {
+  color: #DBE46E;
 }
 
 .navigation ul {
@@ -49,21 +62,26 @@ header {
   transform: translate(-50%, -50%);
 }
 
-/* SERVICES */
-.services-box-icon {
-  padding: 30px;
+.btn {
+  color: #FFFFFF;
 }
 
+/* SERVICES */
 .services-box-icon span {
+  display: inline-block;
   border-radius: 50%;
   border: solid 3px;
   border-color: green;
-  padding: 15px;
+  padding: 30px;
+  position: relative;
 }
 
-.services-box-icon i {
-  font-size: 20px;
+.services-box-icon span i {
+  position: absolute;
+  font-size: 30px;
   color: green;
-  line-height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 /*# sourceMappingURL=style.css.map */
