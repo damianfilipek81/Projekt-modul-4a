@@ -226,6 +226,10 @@ footer .social {
 footer .social li {
   list-style-type: none;
   display: inline-block;
+}
+
+footer .social li a span {
+  display: inline-block;
   border-radius: 50%;
   height: 40px;
   width: 40px;
@@ -235,12 +239,12 @@ footer .social li {
   margin: 0 2px;
 }
 
-footer .social li:hover {
+footer .social li a span:hover {
   transform: scale(1.2);
   opacity: 0.8;
 }
 
-footer .social li i {
+footer .social li a span i {
   position: absolute;
   color: #FFFFFF;
   top: 50%;
